@@ -29,10 +29,7 @@ header{
   background-color: #fff;
   /* display: grid;
   grid-template-columns: 10% 90%; */
-
-  
 }
-
 
 #topLeftNav{
   color: black;
@@ -62,7 +59,7 @@ header{
 #rightNav{
   float: right;
   padding-right:20px;
-
+  text-transform: uppercase;
   white-space: nowrap;
   display: inline;
   margin-top: 20px;
@@ -86,9 +83,15 @@ header{
   border: none;
   color: black;
 }
+
+.dropbtn :active{
+  text-decoration: none;
+  box-shadow: none;
+}
+
 .dropdown {
   display: inline-block;
-  position: relative
+  position: relative;
 }
 .dropdown-content {
   position: absolute;
