@@ -141,10 +141,12 @@ body, html{
   
   
   .infotext{
-    width: 50%;
     float: left;
     z-index: 10;
-    opacity: .2;
+    opacity: .8;
+    bottom: 10.5rem;
+    height: 10.5rem;
+
   }
   
   /*
@@ -155,18 +157,25 @@ body, html{
   width: 50%
   }*/
   
-  .text_right{
+  
+
+  .infotext_right{
+    position: relative;
+    width: 65%;
+    font-size: 3rem;
     background-color: #0e1417;
     color: white;
-    text-align: center;
-    padding: 20px;
+    text-align:left;
+    padding: 50px;
   }
   
-  .text_left{
-    background-color: gray;
+  .infotext_left{
+    position: relative;
+    width: 35%;
+    background-color: rgb(211, 211, 211);
     color:  #0e1417;
     text-align: center;
-    padding: 20px;
+    padding: 50px;
   }
   
   #kolmeneEsitus{
