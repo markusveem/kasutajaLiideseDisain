@@ -283,9 +283,16 @@
     cursor: pointer;
   }
 
+  .navbar_toggle{
+  visibility: hidden;
+  }
+
+  .headerDiv-mobile{
+    visibility:hidden;
+  }
 /* mobiili osa */
 
-  @media screen and (max-width: 799px){
+  @media screen and (max-width: 800px){
     
     .infotext_left{
       width: 100%;
@@ -301,4 +308,34 @@
       height: 7rem;
       float: none;
     }
-}    
+
+    
+    .navbar_toggle{
+      visibility: visible;
+      position: absolute;
+      right: 5px;
+    }
+
+    .bar{
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      background: #0e1417;
+      width: 25px;
+      height: 3px;
+      margin: 5px 5px;
+    }
+
+   
+
+    .headerDivv{
+      visibility: hidden;
+    }
+
+    .headerDiv-mobile{
+      visibility: visible;
+    }
+
+
+}
+
