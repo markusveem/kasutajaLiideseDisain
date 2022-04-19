@@ -161,10 +161,6 @@
   width: 50%
   }*/
   
-  
-
-  
-  
   .infotext_left{
     position: relative;
     width: 65%;
@@ -189,10 +185,31 @@
   
 
   #kolmeneEsitus-cotainer{
+    position:absolute;
+    margin-top: 50px;
     text-align: center;
-    position: relative;
+    align-items: center;
+    padding: 20px;
   }
   
+
+  #kolmeneEsitus-cotainer img{
+    width: 400px;
+    height: 200px;
+  }
+
+  .imgText{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+  }
+
+
   #kolmeneEsitus-cotainer .firstBlock,
   #kolmeneEsitus-cotainer .secondBlock,
   #kolmeneEsitus-cotainer .thirdBlock {
@@ -203,12 +220,11 @@
     cursor: pointer;
   }
   
-  #kolmeneEsitus-cotainer img{
-    max-width: 400px;
-    max-height: 200px;
-  }
+  
   
   .fiveBlock{
+    position: relative;
+    margin-top: 24rem;
     text-align: center;
   }
   
