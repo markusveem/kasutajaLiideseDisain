@@ -5,9 +5,10 @@
 
   header{
     background-color: #fff;
-    position:absolute;
+    position:fixed;
     width: 100%;
     margin-top: -50px;
+    z-index: 999;
     /* display: grid;
     grid-template-columns: 10% 90%; */
   }
@@ -320,8 +321,9 @@
       position: relative;
       display: flex;
       flex-direction: column;
-      background: #0e1417;
+      background: gray;
       width: 25px;
+      top: 20px;
       height: 3px;
       margin: 5px 5px;
     }
@@ -333,7 +335,9 @@
     }
 
     .headerDiv-mobile{
+      margin-top: -10px;
       visibility: visible;
+      position: sticky;
     }
 
 
