@@ -3,11 +3,19 @@
   }*/ 
   
 
+  *{
+    margin: 0;
+    padding: 0;
+  }
+
+
+  
+  /*HEADERI OSA ALGAB */
+
   header{
     background-color: #fff;
     position:fixed;
     width: 100%;
-    margin-top: -50px;
     z-index: 999;
     /* display: grid;
     grid-template-columns: 10% 90%; */
@@ -24,11 +32,13 @@
     float: left;
     margin-top: 10px;
     margin-left: 10px;
+    cursor: pointer;
   }
   
   #hoff_logo:hover{
     max-width: 235px;
     max-height: 235px;
+    filter: brightness(110%);
   }
   
   
@@ -129,29 +139,44 @@
     background-color: #FFFFFF;
   }
   
+
+  /*HEADERI OSA LÄBI */
   
+
+  /*PÕHI TAUST*/
+
   .mainBackground{
-    margin-top: 50px;
     cursor: pointer;
+
+/*     display: grid;*/
+     height: 100%;
   }
   
   
   #heroImage{
-    width: 100%; 
+    width: 100%;
+    object-fit: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     z-index: -1;
+    top: 2rem;
+
+
+  
+    max-height: 100vh;
+    margin: auto;
   }
   
   
+
+
   .infotext{
     float: left;
     z-index: 10;
     opacity: .8;
-    bottom: 14rem;
-    height: 14rem;
-
+    bottom: 10rem;
+    height: 10rem;
   }
   
   /*
@@ -169,22 +194,23 @@
     background-color: #0e1417;
     color: white;
     text-align:left;
-    padding: 50px;
+    padding: 40px;
   }
   
 
   .infotext_right{
     position: relative;
     width: 35%;
-    background-color: rgb(211, 211, 211);
+    background-color: rgba(255,255,255,0.8);
     color:  #0e1417;
     text-align: left;
-    padding: 50px;
+    padding: 40px;
   }
 
+  /*PÕHI TAUST LÄBI*/
   
   
-
+/*KOLMENE BLOKK*/
   #kolmeneEsitus-cotainer{
     position:absolute;
     margin-top: 50px;
@@ -220,7 +246,8 @@
     padding-left: 20px;
     cursor: pointer;
   }
-  
+  /*KOLMENE BLOKK läbi*/
+
   
   
   .fiveBlock{
