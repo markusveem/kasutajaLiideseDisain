@@ -429,10 +429,13 @@
       align-items: stretch;
       justify-content: stretch;
       grid-template-columns: 1fr;
+      padding: 0;
     }
 
     .card{
-      width: 100%;
+      grid-column: 1 / -1;
+      grid-row: auto;
+      width: 100vw;
     }
 
 
