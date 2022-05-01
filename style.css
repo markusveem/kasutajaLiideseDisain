@@ -147,45 +147,31 @@
 
   .mainBackground{
     cursor: pointer;
+    height: 100vh;
+    width: 100vw;
 
-/*     display: grid;*/
-     height: 100%;
-  }
-  
+    }
   
   #heroImage{
     width: 100%;
     object-fit: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    z-index: -1;
-    top: 2rem;
-
-
-  
+    z-index: -1;  
     max-height: 100vh;
     margin: auto;
   }
   
   
 
-
   .infotext{
     float: left;
     z-index: 10;
     opacity: .8;
-    bottom: 10rem;
-    height: 10rem;
+    bottom: 8rem;
+    height: 8rem;
+    align-items: center;
+    justify-content: center;
   }
   
-  /*
-  .infotext_right{
-  width: 50%
-  }
-  .infotext_left{
-  width: 50%
-  }*/
   
   .infotext_left{
     position: relative;
@@ -212,18 +198,38 @@
   
 /*KOLMENE BLOKK*/
   #kolmeneEsitus-cotainer{
-    position:absolute;
-    margin-top: 50px;
+    position: absolute;
+    margin-top: 2rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    grid-gap: 2rem;
+    
     text-align: center;
     align-items: center;
+    justify-content: center;
     padding: 20px;
   }
   
 
   #kolmeneEsitus-cotainer img{
-    width: 400px;
+    width: 500px;
     height: 200px;
+    object-fit: cover;
+
   }
+
+  
+.firstBlock,
+.secondBlock,
+.thirdBlock {
+    position: relative;
+    display:inline-block;
+    padding: 10px;
+    padding-left: 20px;
+    cursor: pointer;
+  }
+
 
   .imgText{
     position: absolute;
@@ -234,18 +240,10 @@
     text-decoration: none;
     text-transform: uppercase;
     font-size: 1.5rem;
+    width: 100%;
   }
 
 
-  #kolmeneEsitus-cotainer .firstBlock,
-  #kolmeneEsitus-cotainer .secondBlock,
-  #kolmeneEsitus-cotainer .thirdBlock {
-    position: relative;
-    display:inline-block;
-    padding: 10px;
-    padding-left: 20px;
-    cursor: pointer;
-  }
   /*KOLMENE BLOKK läbi*/
 
   
