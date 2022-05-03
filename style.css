@@ -153,8 +153,8 @@
 
     }
   
-  #heroImage{
-    width: 100%;
+  .heroImage{
+    width: 100vw;
     object-fit: cover;
     z-index: -1;
     height: 100vh;  
@@ -164,6 +164,7 @@
   
 
   .infotext{
+    position: absolute;
     float: left;
     z-index: 10;
     opacity: .8;
@@ -417,6 +418,7 @@
 
     .headerDivv{
       visibility: hidden;
+      display: contents;
     }
 
     .headerDiv-mobile{
