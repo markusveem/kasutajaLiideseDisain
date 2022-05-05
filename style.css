@@ -166,23 +166,31 @@ header{
   margin: auto;
 }
 
+.infotextContainer{
+  position: absolute;
+  display: grid;
+  grid-template-columns: 65% 35%;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  grid-template-rows: auto;
 
+}
 
 .infotext{
-  position: absolute;
+  /*position: absolute;
   float: left;
   z-index: 10;
   opacity: .8;
   bottom: 8rem;
   height: 8rem;
   align-items: center;
-  justify-content: center;
+  justify-content: center;*/
 }
 
 
 .infotext_left{
   position: relative;
-  width: 65%;
   font-size: 3rem;
   background-color: #0e1417;
   color: white;
@@ -193,7 +201,6 @@ header{
 
 .infotext_right{
   position: relative;
-  width: 35%;
   background-color: rgba(255,255,255,0.8);
   color:  #0e1417;
   text-align: left;
@@ -516,6 +523,12 @@ visibility: hidden;
     grid-column: 1 / -1;
     grid-row: auto;
     width: 100vw;
+  }
+
+
+  .infotextContainer{
+    grid-template-columns: 1fr;
+    grid-template-rows: 2;
   }
 
 
