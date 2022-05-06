@@ -28,20 +28,20 @@ header{
 }
 
 
-#hoff_logo{
+.hoff_logo{
   position:absolute;
   padding-left: 20px;
   max-width: 240px;
   max-height: 240px;
   padding-bottom: 20px;
   display: inline;
-  float: left;
   margin-top: 10px;
   margin-left: 10px;
   cursor: pointer;
+  left: 0;
 }
 
-#hoff_logo:hover{
+.hoff_logo:hover{
   max-width: 235px;
   max-height: 235px;
   filter: brightness(110%);
@@ -177,17 +177,6 @@ header{
 
 }
 
-.infotext{
-  /*position: absolute;
-  float: left;
-  z-index: 10;
-  opacity: .8;
-  bottom: 8rem;
-  height: 8rem;
-  align-items: center;
-  justify-content: center;*/
-}
-
 
 .infotext_left{
   position: relative;
@@ -295,12 +284,6 @@ header{
  
 }
 
-.cardTop{
-}
-
-.cardBottom{
-
-}
 
 .card-title{
   font-size: 2rem;
@@ -350,7 +333,6 @@ footer{
   bottom: 0px;
   background-color: #0e1417;
   color: white;
-  /*position: fixed;*/
 }
 
 .footer_h{
@@ -455,6 +437,9 @@ a .svg_icon_footer{
   cursor: pointer;
 }
 
+/* mobiili osa */
+
+
 .navbar_toggle{
 visibility: hidden;
 }
@@ -462,7 +447,6 @@ visibility: hidden;
 .headerDiv-mobile{
   visibility:hidden;
 }
-/* mobiili osa */
 
 @media screen and (max-width: 800px){
   
@@ -488,6 +472,7 @@ visibility: hidden;
     right: 5px;
   }
 
+  /*
   .bar{
     position: relative;
     display: flex;
@@ -497,7 +482,7 @@ visibility: hidden;
     top: 20px;
     height: 3px;
     margin: 5px 5px;
-  }
+  }*/
 
  
 
@@ -544,4 +529,111 @@ visibility: hidden;
       padding-top: 6rem;
       padding-bottom: 6rem;
   }
+}
+
+body{
+  background: white;
+  color: white;
+  font-family: 'Bebas';
+  /*text-align: center;*/
+ /* max-width: 100%;
+  overflow-x: hidden;*/
+  padding: 0;
+  margin: 0;
+}
+h1 {
+  text-align: center;
+  letter-spacing: 1px;
+  word-spacing: 0.15em;
+  font-size: 3em;
+  line-height: 1.2;
+  transform: translateY(52%);
+}
+
+
+#toggle {
+  display: none;
+}
+
+/**
+  Hamburger
+**/
+.hamburger {
+  position: absolute;
+  top: 3em;
+  right: 5%;
+  margin-left: -2em;
+  margin-top: -45px;
+  width: 3em;
+  height: 45px;
+  z-index: 5;
+}
+
+.hamburger div {
+  position: relative;
+  width: 2.4em;
+  height: 1px;
+  border-radius: 3px;
+  background-color: #0E1417;
+  margin-top: 8px;
+  transition: all 0.3s ease-in-out;
+}
+
+/**
+Nav Styles
+**/
+.nav {
+  position: fixed;
+  width: 100%;
+  height: 94%;
+  margin-top: 27%;
+  background-color: white;
+  top: -100%; left: 0; right: 0; bottom: 0;
+  overflow: hidden;
+  transition: all 0s ease-in-out;
+  transform: scale(0);
+  justify-content: center;
+}
+
+.nav-wrapper {
+  position: relative;
+  overflow: hidden;
+  overflow-y: auto;
+  height: 100%;
+}
+
+nav a {
+  text-decoration: none;
+  color: #4C5453;
+  display: inline-block;
+  transition: color 0.2s ease-in-out;
+  font-size: 3.2mm;
+  font-family: 'Fira Sans Extra Condensed',sans-serif;
+  font-weight: 300;
+}
+
+nav a:hover {
+  color: #F7B97D;
+}
+
+nav a:hover:before {
+  height: 100%;
+}
+
+
+/**
+Mobiili men22 animatsioon
+**/
+
+#toggle:checked + .hamburger + .nav {
+  top: 0;
+  transform: scale(1);
+}
+
+.MobileLang{
+  color: #3eadef;
+}
+
+.MobileMenuSmall{
+  justify-content: right;
 }
