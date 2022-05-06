@@ -1,8 +1,7 @@
 let changeLanguage = document.querySelector(".languageSelect");
 
- window.onload = function(){
+window.onload = function(){
     changeLanguage.addEventListener("click",changeLanguageFunc);
-
 }
 
 

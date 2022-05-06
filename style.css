@@ -1,12 +1,17 @@
-*body, html{
+body, html{
   height: 100%;
-}*/ 
+} 
 
 
 *{
-  margin: 0;
-  padding: 0;
+ /*  margin: 0;
+  padding: 0; */
   box-sizing: border-box;
+  line-height: 1.618rem;
+}
+
+div{
+  display: block;
 }
 
 
@@ -161,23 +166,31 @@ header{
   margin: auto;
 }
 
+.infotextContainer{
+  position: absolute;
+  display: grid;
+  grid-template-columns: 65% 35%;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  grid-template-rows: auto;
 
+}
 
 .infotext{
-  position: absolute;
+  /*position: absolute;
   float: left;
   z-index: 10;
   opacity: .8;
   bottom: 8rem;
   height: 8rem;
   align-items: center;
-  justify-content: center;
+  justify-content: center;*/
 }
 
 
 .infotext_left{
   position: relative;
-  width: 65%;
   font-size: 3rem;
   background-color: #0e1417;
   color: white;
@@ -188,7 +201,6 @@ header{
 
 .infotext_right{
   position: relative;
-  width: 35%;
   background-color: rgba(255,255,255,0.8);
   color:  #0e1417;
   text-align: left;
@@ -199,49 +211,61 @@ header{
 
 
 /*KOLMENE BLOKK*/
-#kolmeneEsitus-cotainer{
-  margin-top: 2rem;
+
+.trio_block{
   width: 100vw;
   display: grid;
   grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
   grid-gap: 2rem;
-  
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
+  background-color: #fff;
 }
 
-
-#kolmeneEsitus-cotainer img{
-  object-fit: cover;
-  width: 500px;
-  height: 200px;
-
+.trio_block_item{
+  width: 100%;
+  height: 100%;
+  background: rgba(255,255,255,0.96);
 }
 
-
-.firstBlock,
-.secondBlock,
-.thirdBlock {
+.container_frame_12_5{
   position: relative;
-  display:inline-block;
-  padding: 10px;
-  padding-left: 20px;
-  cursor: pointer;
+  height: 0;
+  overflow: hidden;
+  padding-top: 41%;
+  background: #29333a;
 }
 
+.trio_image{
+  width: 100%;
+}
 
-.imgText{
+.container_contents_12_5{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.btn_trio {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 1.5rem;
+  transform: translate(-50%,-50%);
   width: 100%;
+  color: rgba(255,255,255,0.96);
+  border-radius: 0;
+  text-transform: uppercase;
+  font-size: 1.618rem;
+  line-height: 1.5;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 
@@ -502,4 +526,129 @@ visibility: hidden;
   }
 
 
+  .infotextContainer{
+    grid-template-columns: 1fr;
+    grid-template-rows: 2;
+  }
+
+
+
+}
+
+@media screen and (min-width: 800px){
+  .trio_block{
+      display: grid ;
+      padding-left: 2rem;
+      padding-right: 2rem;
+      margin-bottom: 0;
+      padding-top: 6rem;
+      padding-bottom: 6rem;
+  }
+}
+
+body{
+  background: white;
+  color: white;
+  font-family: 'Bebas';
+  text-align: center;
+  max-width: 100%;
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0;
+}
+h1 {
+  text-align: center;
+  letter-spacing: 1px;
+  word-spacing: 0.15em;
+  font-size: 3em;
+  line-height: 1.2;
+  transform: translateY(52%);
+}
+
+
+#toggle {
+  display: none;
+}
+
+/**
+  Hamburger
+**/
+.hamburger {
+  position: absolute;
+  top: 3em;
+  right: 5%;
+  margin-left: -2em;
+  margin-top: -45px;
+  width: 3em;
+  height: 45px;
+  z-index: 5;
+}
+
+.hamburger div {
+  position: relative;
+  width: 2.4em;
+  height: 1px;
+  border-radius: 3px;
+  background-color: #0E1417;
+  margin-top: 8px;
+  transition: all 0.3s ease-in-out;
+}
+
+/**
+Nav Styles
+**/
+.nav {
+  position: fixed;
+  width: 100%;
+  height: 94%;
+  margin-top: 27%;
+  background-color: white;
+  top: -100%; left: 0; right: 0; bottom: 0;
+  overflow: hidden;
+  transition: all 0s ease-in-out;
+  transform: scale(0);
+  justify-content: center;
+}
+
+.nav-wrapper {
+  position: relative;
+  overflow: hidden;
+  overflow-y: auto;
+  height: 100%;
+}
+
+nav a {
+  text-decoration: none;
+  color: #4C5453;
+  display: inline-block;
+  transition: color 0.2s ease-in-out;
+  font-size: 3.2mm;
+  font-family: 'Fira Sans Extra Condensed',sans-serif;
+  font-weight: 300;
+}
+
+nav a:hover {
+  color: #F7B97D;
+}
+
+nav a:hover:before {
+  height: 100%;
+}
+
+
+/**
+Mobiili men22 animatsioon
+**/
+
+#toggle:checked + .hamburger + .nav {
+  top: 0;
+  transform: scale(1);
+}
+
+.MobileLang{
+  color: #3eadef;
+}
+
+.MobileMenuSmall{
+  justify-content: right;
 }
