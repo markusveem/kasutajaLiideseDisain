@@ -1,3 +1,4 @@
+/*
 let changeLanguage = document.querySelector(".languageSelect");
 
 window.onload = function(){
@@ -16,7 +17,7 @@ function changeLanguageFunc(){
 }
 
  
- 
+ */
  /*const firstGalleryPic = document.querySelector(".firstBlock");
  firstGalleryPic.addEventListener("click",change);
  function change(){
