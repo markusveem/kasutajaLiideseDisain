@@ -311,6 +311,11 @@ header{
   grid-column: 5 / -1;
 }
 
+.fiveBlock a{
+  color: #000000;
+  text-decoration: none;
+}
+
 
 
 
@@ -570,6 +575,11 @@ Nav Styles
 
 }
 
+.nav a:hover{
+  color:#F7B97D;
+  text-decoration: none;
+}
+
 .nav li{
   margin: 0.5rem 0;
 
@@ -628,9 +638,11 @@ nav a {
   font-weight: 300;
 }
 
-nav a:hover {
+nav a:hover{
   color: #F7B97D;
 }
+
+
 
 nav a:hover:before {
   height: 100%;
